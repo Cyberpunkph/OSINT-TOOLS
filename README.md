@@ -1,21 +1,17 @@
 # 🚀 RUBY OSINT TOOLKIT v4.0
 
 <p align="center">
-  <img src="https://via.placeholder.com/800x200/0f172a/22c55e?text=RUBY+OSINT+TOOLKIT+v4.0" alt="banner">
+  <img src="assets/banner.png" alt="RUBY OSINT TOOLKIT v4 Banner">
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/github/stars/Cyberpunkph
-/OSINT-TOOLS
+  <img src="https://img.shields.io/github/stars/Cyberpunkph/OSINT-TOOLS
 ?style=for-the-badge">
-  <img src="https://img.shields.io/github/forks/Cyberpunkph
-/OSINT-TOOLS
+  <img src="https://img.shields.io/github/forks/Cyberpunkph/OSINT-TOOLS
 ?style=for-the-badge">
-  <img src="https://img.shields.io/github/issues/Cyberpunkph
-/OSINT-TOOLS
+  <img src="https://img.shields.io/github/issues/Cyberpunkph/OSINT-TOOLS
 ?style=for-the-badge">
-  <img src="https://img.shields.io/github/license/Cyberpunkph
-/OSINT-TOOLS
+  <img src="https://img.shields.io/github/license/Cyberpunkph/OSINT-TOOLS
 ?style=for-the-badge">
 </p>
 
