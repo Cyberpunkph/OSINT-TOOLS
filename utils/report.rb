@@ -1,8 +1,8 @@
-def generate_html(results)
-  html = "<html><body><h1>OSINT Report</h1>"
-  results.each do |r|
-    html += "<p>#{r[:site]} - #{r[:url]}</p>"
-  end
-  html += "</body></html>"
-  File.write("output/report.html", html)
+def get_proxy(use_tor)
+  return nil unless use_tor
+
+  {
+    host: "127.0.0.1",
+    port: 9050
+  }
 end
