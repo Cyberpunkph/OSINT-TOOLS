@@ -1,5 +1,55 @@
 [
   {"name":"GitHub","url":"https://github.com/{username}","errorType":"status_code"},
+  {"name":"GitLab","url":"https://gitlab.com/{username}","errorType":"status_code"},
+  {"name":"Bitbucket","url":"https://bitbucket.org/{username}","errorType":"status_code"},
+
   {"name":"Twitter","url":"https://twitter.com/{username}","errorType":"status_code"},
-  {"name":"Instagram","url":"https://instagram.com/{username}","errorType":"status_code"}
+  {"name":"X","url":"https://x.com/{username}","errorType":"status_code"},
+  {"name":"Facebook","url":"https://facebook.com/{username}","errorType":"status_code"},
+  {"name":"Instagram","url":"https://instagram.com/{username}","errorType":"status_code"},
+  {"name":"TikTok","url":"https://tiktok.com/@{username}","errorType":"status_code"},
+  {"name":"Snapchat","url":"https://snapchat.com/add/{username}","errorType":"status_code"},
+
+  {"name":"Reddit","url":"https://reddit.com/user/{username}","errorType":"status_code"},
+  {"name":"Pinterest","url":"https://pinterest.com/{username}","errorType":"status_code"},
+  {"name":"Tumblr","url":"https://{username}.tumblr.com","errorType":"status_code"},
+
+  {"name":"YouTube","url":"https://youtube.com/@{username}","errorType":"status_code"},
+  {"name":"Twitch","url":"https://twitch.tv/{username}","errorType":"status_code"},
+  {"name":"Kick","url":"https://kick.com/{username}","errorType":"status_code"},
+
+  {"name":"Medium","url":"https://medium.com/@{username}","errorType":"status_code"},
+  {"name":"DevTo","url":"https://dev.to/{username}","errorType":"status_code"},
+  {"name":"Hashnode","url":"https://hashnode.com/@{username}","errorType":"status_code"},
+
+  {"name":"SoundCloud","url":"https://soundcloud.com/{username}","errorType":"status_code"},
+  {"name":"Spotify","url":"https://open.spotify.com/user/{username}","errorType":"status_code"},
+
+  {"name":"Keybase","url":"https://keybase.io/{username}","errorType":"status_code"},
+  {"name":"Pastebin","url":"https://pastebin.com/u/{username}","errorType":"status_code"},
+
+  {"name":"ProductHunt","url":"https://producthunt.com/@{username}","errorType":"status_code"},
+  {"name":"AngelList","url":"https://angel.co/u/{username}","errorType":"status_code"},
+
+  {"name":"Patreon","url":"https://patreon.com/{username}","errorType":"status_code"},
+  {"name":"Gravatar","url":"https://gravatar.com/{username}","errorType":"status_code"},
+
+  {"name":"Behance","url":"https://behance.net/{username}","errorType":"status_code"},
+  {"name":"Dribbble","url":"https://dribbble.com/{username}","errorType":"status_code"},
+
+  {"name":"Flickr","url":"https://flickr.com/people/{username}","errorType":"status_code"},
+  {"name":"Vimeo","url":"https://vimeo.com/{username}","errorType":"status_code"},
+
+  {"name":"AboutMe","url":"https://about.me/{username}","errorType":"status_code"},
+  {"name":"WordPress","url":"https://{username}.wordpress.com","errorType":"status_code"},
+
+  {"name":"Telegram","url":"https://t.me/{username}","errorType":"status_code"},
+
+  {"name":"Replit","url":"https://replit.com/@{username}","errorType":"status_code"},
+  {"name":"CodePen","url":"https://codepen.io/{username}","errorType":"status_code"},
+  {"name":"LeetCode","url":"https://leetcode.com/{username}","errorType":"status_code"},
+  {"name":"HackerRank","url":"https://hackerrank.com/{username}","errorType":"status_code"},
+  {"name":"Kaggle","url":"https://kaggle.com/{username}","errorType":"status_code"}
+
+  // 👉 duplicate pattern to reach 100+
 ]
