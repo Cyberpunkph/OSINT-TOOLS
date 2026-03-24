@@ -1,0 +1,5 @@
+[
+  {"name":"GitHub","url":"https://github.com/{username}","errorType":"status_code"},
+  {"name":"Twitter","url":"https://twitter.com/{username}","errorType":"status_code"},
+  {"name":"Instagram","url":"https://instagram.com/{username}","errorType":"status_code"}
+]
