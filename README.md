@@ -83,6 +83,19 @@ ruby main.rb -u https://example.com
 ruby main.rb -n johndoe -d example.com -i 8.8.8.8
 ```
 
+🌍 TOR MODE
+
+```bash
+sudo service tor start
+ruby main.rb -n target --tor
+```
+
+💀 FULL COMBO
+
+```bash
+ruby main.rb -n target --tor --stealth
+```
+
 ---
 
 ## 📂 Project Structure
