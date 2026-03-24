@@ -56,14 +56,31 @@ bundle install
 ### 🔍 Username Scan
 
 ```bash
-ruby main.rb -n username
+ruby main.rb -n johndoe
 ```
 
-### 🌍 With TOR
+🌐 Domain OSINT
 
 ```bash
-sudo service tor start
-ruby main.rb -n username --tor
+ruby main.rb -d example.com
+```
+
+📡 IP Lookup
+
+```bash
+ruby main.rb -i 8.8.8.8
+```
+
+📧 Email Scraping
+
+```bash
+ruby main.rb -u https://example.com
+```
+
+🧠 FULL COMBO (🔥)
+
+```bash
+ruby main.rb -n johndoe -d example.com -i 8.8.8.8
 ```
 
 ---
