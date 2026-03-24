@@ -2,6 +2,7 @@
 
 require 'optparse'
 require 'colorize'
+require 'json'
 
 require_relative 'modules/username'
 require_relative 'modules/dns'
@@ -19,10 +20,12 @@ OptionParser.new do |opts|
   opts.on("-d DOMAIN", "Domain OSINT") { |v| options[:domain] = v }
   opts.on("-i IP", "IP Lookup") { |v| options[:ip] = v }
   opts.on("-u URL", "Email Scraper") { |v| options[:url] = v }
+
   opts.on("--tor", "Use TOR") { options[:tor] = true }
+  opts.on("--stealth", "Stealth mode (slow + less detection)") { options[:stealth] = true }
 end.parse!
 
-puts "RUBY OSINT TOOLKIT v4.1".blue
+puts "RUBY OSINT TOOLKIT v5.0".blue
 
 results = {}
 
@@ -31,7 +34,11 @@ results = {}
 # =========================
 
 if options[:username]
-  results[:username] = username_check(options[:username], use_tor: options[:tor])
+  results[:username] = username_check(
+    options[:username],
+    use_tor: options[:tor],
+    stealth: options[:stealth]
+  )
 end
 
 if options[:domain]
@@ -47,10 +54,6 @@ if options[:url]
   results[:emails] = email_scraper(options[:url])
 end
 
-# =========================
-# OUTPUT
-# =========================
-
 if results.empty?
   puts "Use -h for help".red
   exit
@@ -61,6 +64,6 @@ Dir.mkdir("output") unless Dir.exist?("output")
 File.write("output/report.json", JSON.pretty_generate(results))
 File.write("output/report.txt", results.to_s)
 
-generate_html(results)
+generate_html(results[:username] || [])
 
 puts "\nReports saved in /output".yellow
