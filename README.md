@@ -43,7 +43,8 @@
 ## 🛠️ Installation
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git
+git clone https://github.com/Cyberpunkph/OSINT-TOOLS
+.git
 cd YOUR_REPO
 bundle install
 ```
