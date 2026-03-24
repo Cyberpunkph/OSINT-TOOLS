@@ -1,9 +1,172 @@
-# RUBY OSINT TOOLKIT v4.0
+# 🚀 RUBY OSINT TOOLKIT v4.0
 
-## Features
-- Username OSINT
-- TOR support
-- HTML reports
+<p align="center">
+  <img src="https://via.placeholder.com/800x200/0f172a/22c55e?text=RUBY+OSINT+TOOLKIT+v4.0" alt="banner">
+</p>
 
-## Usage
+<p align="center">
+  <img src="https://img.shields.io/github/stars/Cyberpunkph
+/OSINT-TOOLS
+?style=for-the-badge">
+  <img src="https://img.shields.io/github/forks/Cyberpunkph
+/OSINT-TOOLS
+?style=for-the-badge">
+  <img src="https://img.shields.io/github/issues/Cyberpunkph
+/OSINT-TOOLS
+?style=for-the-badge">
+  <img src="https://img.shields.io/github/license/Cyberpunkph
+/OSINT-TOOLS
+?style=for-the-badge">
+</p>
+
+<p align="center">
+  <b>⚡ Advanced OSINT Toolkit for Username, Domain, and Network Intelligence</b>
+</p>
+
+---
+
+## 🧠 Features
+
+* 🔍 **Username OSINT (Smart Detection Engine)**
+* 🌐 **TOR / Proxy Support (Anonymous Scanning)**
+* ⚡ **Concurrent Scanning (Fast & Efficient)**
+* 📊 **HTML Report Dashboard**
+* 📁 **Multiple Output Formats (JSON, TXT, HTML)**
+* 🧩 **Modular Architecture (Expandable)**
+
+---
+
+## 📸 Preview
+
+<p align="center">
+  <img src="https://via.placeholder.com/700x400/020617/22c55e?text=OSINT+Preview">
+</p>
+
+---
+
+## 🛠️ Installation
+
+```bash
+git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git
+cd YOUR_REPO
+bundle install
+```
+
+---
+
+## 🚀 Usage
+
+### 🔍 Username Scan
+
+```bash
 ruby main.rb -n username
+```
+
+### 🌍 With TOR
+
+```bash
+sudo service tor start
+ruby main.rb -n username --tor
+```
+
+---
+
+## 📂 Project Structure
+
+```
+ruby-osint-toolkit/
+│
+├── main.rb
+├── config/
+├── modules/
+├── utils/
+├── output/
+└── Gemfile
+```
+
+---
+
+## 📊 Output
+
+After scanning, results are saved in:
+
+```
+output/
+├── report.json
+├── report.txt
+└── report.html
+```
+
+---
+
+## ⚙️ Configuration
+
+Edit:
+
+```
+config/sites.json
+```
+
+Add new platforms easily:
+
+```json
+{
+  "name": "GitHub",
+  "url": "https://github.com/{username}",
+  "errorType": "status_code"
+}
+```
+
+---
+
+## 🧠 Detection Engine
+
+Supports:
+
+* ✅ Status Code Detection
+* ✅ Content-Based Detection
+* ✅ Regex Matching
+* ✅ Redirect Handling
+
+---
+
+## ⚠️ Disclaimer
+
+This tool is for **educational and ethical OSINT purposes only**.
+
+Do NOT use this tool for:
+
+* Unauthorized tracking
+* Harassment
+* Illegal investigations
+
+---
+
+## 👨‍💻 Author
+
+**CyberpunkPH**
+
+---
+
+## ⭐ Support
+
+If you like this project:
+
+* ⭐ Star the repo
+* 🍴 Fork it
+* 🧠 Contribute
+
+---
+
+## 🔥 Roadmap (v5)
+
+* 🧠 AI Username Correlation
+* 🌐 100+ Site Database
+* 📡 Breach / Dark Web Integration
+* 🖥️ Web Dashboard UI
+
+---
+
+<p align="center">
+  ⚡ Built for Hackers, Investigators & Cybersecurity Enthusiasts ⚡
+</p>
