@@ -50,6 +50,4 @@
   {"name":"LeetCode","url":"https://leetcode.com/{username}","errorType":"status_code"},
   {"name":"HackerRank","url":"https://hackerrank.com/{username}","errorType":"status_code"},
   {"name":"Kaggle","url":"https://kaggle.com/{username}","errorType":"status_code"}
-
-  // 👉 duplicate pattern to reach 100+
 ]
