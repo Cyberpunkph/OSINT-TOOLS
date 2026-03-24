@@ -5,22 +5,26 @@ require 'concurrent'
 require_relative '../utils/http'
 require_relative '../utils/detector'
 
-def username_check(username, use_tor: false)
-  puts "\n[USERNAME OSINT v5 - HIGH SPEED]".green
+def username_check(username, use_tor: false, stealth: false)
+  puts "\n[USERNAME OSINT v5]".green
 
   sites = JSON.parse(File.read("config/sites.json"))
 
   found = []
   mutex = Mutex.new
 
-  # 🔥 HIGH PERFORMANCE THREAD POOL
-  pool = Concurrent::FixedThreadPool.new(20)
+  # ⚡ dynamic thread count
+  threads = stealth ? 8 : 25
+  pool = Concurrent::FixedThreadPool.new(threads)
 
   sites.each do |site|
     pool.post do
       url = site["url"].gsub("{username}", username)
 
       begin
+        # 🕶️ stealth delay
+        sleep(rand(0.3..1.0)) if stealth
+
         res = http_request(url, use_tor: use_tor)
 
         if detect_account(res, site)
